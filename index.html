@@ -106,7 +106,7 @@
 						<p>Since the 2015, 2016, and 2017 rankings contain less than 1000 universities each, the rankings are normalized into percentile. To represent a country’s education performance, the weighted mean of the percentile rankings of each country is taken, with higher rankings given more weight to preserve and emphasize the prestige of these universities.</p>
 					</section>
 					<footer>
-						<p>Find the compiled and tabulated dataset <a href="https://docs.google.com/spreadsheets/d/1JcT_c6dk4CSLIP7qHmeOnz55r-2MnQOeX_mgPz8PTvk/edit?gid=0#gid=0">here</a>.</p>
+						<div><a href="https://docs.google.com/spreadsheets/d/1JcT_c6dk4CSLIP7qHmeOnz55r-2MnQOeX_mgPz8PTvk/edit?gid=0#gid=0">Compiled and Tabulated Dataset</a> | <a href="https://colab.research.google.com/drive/1hRsska2aMzQLxo34SJtFd10f9ua2o5Ad?usp=sharing">Colab Notebook</a> </div>
 					</footer>
 				</div>
 			</article>
@@ -119,20 +119,31 @@
 					</header>
 					<section>
 						<h3>Analysis</h3>
-						<h4>What are the economic and social factors that affect global university rankings?</h4>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<h4>Do countries with similar indicator values also have similar rankings?</h4>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<h4>Can rankings be predicted?</h4>
+						<h4>Nutshell</h4>
+						<p>Get an idea of the Philippines' ranks throughout the years by looking at the rankings and GDP (most common measurement of a country's economic performance).</p>
+						<img src="" />
+						<p>The graph above shows the relationship between the Philippine university rankings and the country’s gross domestic product (GDP) from 2014 to 2024. The median percentile rank of the Philippines hovers around the 35th and 50th percentile with lowest being in 2015 and the highest in 2024. The Philippines’ GDP in current US dollars, however, shows a consistent upward trend throughout the decade. This shows a steady economic growth, excluding the dip in 2021 probably due to the COVID-19 pandemic. As seen, the economic growth does not appear to be directly proportional to the university rankings. This clearly implies that economic factors like GDP is not the only factor but many more can affect university standings.</p>
+						<img src="" />
+						<p>Looking at the Philippine university rankings and the country’s GDP in percentile form from 2014 to 2024, there is still no clear correlation between the two factors and may suggest that economic performance is not sufficient to affect university rankings. Economic growth does not directly translate into improved university performance. This starts a conversation that the Philippines’ poor economic performance can be slightly connected to the below average education performance. The Philippines has advanced economically throughout the years but what about its educational performance.</p>
+						<img src="" />
+						<p>The country who topped the rankings throughout the years was the United States with Massachusetts Institute of Technology - MIT being an outstandingly ranked university. The strong and stable economic performance of the United States is clearly seen along with the high education performance. This does not automatically imply that the strong economic performance directly translates to strong education performance. This gives us an insight that a strong economy can lead to a good educational system or vice versa. An indication that a highly developed economy like the United States can support world-class academic institutions.</p>
+						<img src="" />
+						<p>Examining Middle Economic Performers like Korea Republic, the same can be observed. The economic performance is better than the Philippine economy but weaker than the United States. The education performance is also seen as between the two countries. This is very interesting to consider as one can clearly see a connection between economic growth and education performance. However, it is important to keep in mind that there may be other factors to consider.</p>
+						<img src="" />
+						<p>With each dot being a country, the plot can reveal some insights regarding the relationship between university ranking and GDP in percentile form. There is a large concentration of countries in the lower left, indicating the countries with a low university ranking having varied GDP rankings. The countries with low ranked universities can have low economic performance until above average economic performance. There are also countries with high GDP but weak education performance. This can be an important insight to investigate further, revealing that there is no clear connection between the two factors. The absence of dots on the lower right shows that countries with low GDP do not have high university rankings. These may be interesting but it is also important to consider other factors aside from economic growth.</p>
+						<h4>RQ 1: What are the economic and social factors that affect global university rankings?</h4>
+						<img src="" />
+						<p>The features that are clearly important relative to the other features are the Gross Domestic Product (GDP) , the Rule of Law and the Government Effectiveness of the country. These have a large impact on the country’s university rankings. These three features are all related to the government and how they handle the country. By looking at these factors, an assumption can already be made about the country’s ranking. It proves that the way a country is managed plays an important role in its educational system. One can argue that it makes sense that these economic and social factors have the most influence. Notable features like Scientific and Technical Journal Articles, Adolescent Fertility Rate and Labor Force Participation Rate can also slightly influence the rankings. However, features such as Access to Electricity, GDP growth, Foreign Direct Investment and etc. remain minimal to insignificant to the rankings. From this, features, features that are not within the 95% cumulative importance can be removed. Overall, the features regarding the performance of the government prove to be the most important factors that influence a country’s university rankings.</p>
+						<h4>RQ 2: Do countries with similar indicator values also have similar rankings? &#40;Focused on PH&#41; </h4>
+						<img src="" />
+						<p>The hierarchical clustering dendrogram shows that the countries are grouped into three clusters. The Philippines is part of the green clusters along with countries like Morocco, Romania and Costa Rica. This indicates that the Philippines have the most similar features to these countries compared to others in other clusters like the United States and Singapore.</p>
+						<p>The three main clusters namely Cluster 1 (yellow), Cluster 2 (green), and Cluster 3 (red) are the main clusters. The top indicators of each cluster was calculated by getting the deviation from the average of all of the clusters. For Cluster 1, the feature Merchandise Trade stands out as the main differential indicator. These are countries like Poland, Belarus, Portugal and Singapore. For Cluster 2, features like Adolescent Fertility Rate, GNI Per Capita and Merchandise Trade are the top indicators. These contain countries like the Philippines, Costa Rica, Peru and others. For Cluster 3, the GNI Per Capita and Merchandise Trade are the top indicators. These are countries like the United States, France and Italy. It is clear that the Merchandise Trade and GNI Per Capita are the main differences between each cluster. This gives us insights on how the countries of each cluster are similar in these factors and mainly grouped by this. Economic indicators stand out as the main differences between the clusters.</p>
+						<img src="" />
+						<p>Using the Kruskal-Wallis test, it was found out that the distributions of the country university rank differ significantly between at least two clusters. The similarity of tank within clusters was then calculated using Coefficient of Variance. Cluster 1 contains the middle valued rankings with a CV of 50.54% indicating a high relative variability. The rankings are diverse with some outliers with higher-than-average values. Cluster 2 contains the lowest rankings among the three clusters. They have the highest relative variability but a spread-out distribution. This can indicate the disconnectedness between indicators and the rankings in Cluster 2. Lastly, Cluster 3 contains the highest rankings and lowest relative variability. This suggests strong high-performing group.</p>
+						<p>Overall, this can suggest that the higher ranking countries (Cluster 3) are the most consistent while the lowest-performing countries (Cluster 2) are the most dispersed. Countries with similar values in features like Merchandise Trade and GNI Per Capita have been the main clusters. With Cluster 1 containing many first-world countries, it can be seen they are consistently ranked highly. The other clusters containing third-world countries show a dispersed distribution of rankings. This suggests that high-performing countries are consistently ranked higher and have similar rankings with countries like them. On the other hand, the low-performing countries with similar indicator values have varied rankings despite their similarity in indicator value.</p>
+						<h4>RQ 3: Can rankings be predicted?</h4>
 						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 					</section>
-					<section>
-						<h3>Machine Learning</h3>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-					</section>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-					</footer>
 				</div>
 			</article>
 
