@@ -1758,6 +1758,10 @@ input, select, textarea {
 		text-align: left;
 	}
 
+	nav#nav ul{
+		text-align: center;
+	}
+
 		ul li {
 			padding-left: 0.5em;
 		}
