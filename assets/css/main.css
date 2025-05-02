@@ -1755,6 +1755,7 @@ input, select, textarea {
 	ul {
 		list-style: disc;
 		padding-left: 1em;
+		text-align: left;
 	}
 
 		ul li {
@@ -1768,6 +1769,29 @@ input, select, textarea {
 
 		ol li {
 			padding-left: 0.25em;
+		}
+		
+		ol.references {
+			counter-reset: item;
+			font-size: 0.75em;
+			margin-bottom: 0;;
+		}
+		
+		ol.references li {
+			display: block;
+			margin-bottom: -1em;
+			text-align: left;
+		}
+		ol.references li::before {
+			display: inline-block;
+			content: "[" counter(item) "] ";
+			counter-increment: item;
+			width: 2em;
+			margin-left: -2em;
+		}
+
+		dl {
+			text-align: left;
 		}
 
 /* Social */
@@ -2160,6 +2184,7 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 		margin-bottom: 0;
+		text-align: center;
 	}
 
 		#copyright li {
